@@ -1,0 +1,26 @@
+<p-menubar >
+    <!-- left side of icons -->
+    <ng-template pTemplate="start">
+        <button pButton type="button" icon="pi pi-prime" class="p-button-text" style="color: rgb(88, 88, 88)"></button>
+    </ng-template>
+    <!-- right side icons -->
+    <div >
+        <button pButton type="button" icon="pi pi-bars" class="p-button-text" style="color: rgb(88, 88, 88)" (click)="sideBar()">
+        </button>
+        <button pButton type="button" icon="pi pi-calendar" class="p-button-text" style="color: rgb(88, 88, 88)"></button>
+        <button pButton type="button" icon="pi pi-user" class="p-button-text" style="color: rgb(88, 88, 88)"></button>
+        <button pButton type="button" icon="pi pi-cog" class="p-button-text" style="color: rgb(88, 88, 88)"></button>
+    </div>
+</p-menubar>
+
+<!-- row for left side menu and right side cards -->
+<!-- styles for  -->
+<div class="flex flex-row flex-wrap" >
+    <div class="mt-2 mr-2" [(hidden)]="display" style="overflow-y: auto; max-height: 85vh; ">
+        <p-menu [model]="itemss" class=""></p-menu>
+    </div>
+    <!-- cards -->
+    <!-- <div class="w-9 max-w-auto">
+        <app-cards class=""></app-cards>
+    </div> -->
+</div>

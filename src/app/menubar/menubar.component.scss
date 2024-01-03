@@ -1,0 +1,36 @@
+@import url(../../../node_modules/primeflex/primeflex.css);
+:host ::ng-deep .p-menu .p-menuitem-link .p-menuitem-text { 
+    color: #444444 !important; 
+    font-size: 14px;
+
+    
+} 
+:host ::ng-deep .p-menu .p-menuitem-link .p-menuitem-icon { 
+    color: #444444 !important; 
+    font-size: 13px;
+
+} 
+:host ::ng-deep .p-menu .p-submenu-header{ 
+    color: #000 !important; 
+    font-size: 12px;
+    font-weight: bolder;
+} 
+:host ::ng-deep .p-menu{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+:host ::ng-deep .p-menu .p-menuitem-link{
+
+    border-radius: 10px; 
+    margin-left: 15px;
+}
+
+
+:host ::ng-deep .p-menu .p-menuitem-link:focus,  
+.p-menu .p-menuitem-link:hover{ 
+    font-weight: bold;
+    color: purple; 
+} 
+:host ::ng-deep .p-menu .p-menuitem-link:hover{ 
+    background-color: rgba(164, 197, 211, 0.123);
+}
